@@ -1,0 +1,234 @@
+
+* {
+  box-sizing: border-box;
+
+}
+
+body{
+  margin: 0;
+  gap: 0;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;  
+    height: 100vh;
+    width: 100vw;
+}
+
+.grid-item {
+  background-color: #f2f2f2;
+  text-align: center;
+  transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+ height: calc(100/3)+'hv';
+}
+
+.grid-item:hover {
+  transform: scale(1.05);
+  z-index: 999;
+  overflow: hidden;
+}
+
+.grid-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  z-index: -1;
+}
+
+.grid-item:hover::before {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.grid-item[data-goal]::before {
+  content: "SDG " attr(data-goal) ": ";
+  font-weight: bold;
+}
+
+.goal-content {
+  position: relative;
+  z-index: 1;
+}
+
+#sdg1{
+  background-image:url("sdg1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#sdg1:hover {
+  background-image: url("sdg1gif.webp");
+  animation: sdg-anim 1s forwards;
+
+}
+#sdg2{
+  background-image:url("sdg2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#sdg2:hover {
+  background-image: url("sdg2gif.webp");
+  animation: sdg-anim 1s forwards;
+}
+#sdg3{
+  background-image:url("sdg3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#sdg3:hover {
+  background-image: url("sdg3gif.webp");
+  animation: sdg-anim 1s forwards;
+
+}
+#sdg4{
+  background-image:url("sdg4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#sdg4:hover {
+  background-image: url("sdg4gif.webp");
+  animation: sdg-anim 1s forwards;
+}
+#sdg5{
+  background-image:url("sdg5.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#sdg5:hover {
+  background-image: url("sdg5gif.webp");
+  animation: sdg-anim 1s forwards;
+
+}
+#sdg6{
+  background-image:url("sdg6.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#sdg6:hover {
+  background-image: url("sdg6gif.webp");
+  animation: sdg-anim 1s forwards;
+}
+#sdg7{
+  background-image:url("sdg7.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#sdg7:hover {
+  background-image: url("sdg7gif.webp");
+  animation: sdg-anim 1s forwards;
+
+}
+#sdg8{
+  background-image:url("sdg8.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#sdg8:hover {
+  background-image: url("sdg8gif.webp");
+  animation: sdg-anim 1s forwards;
+}
+#sdg9{
+  background-image:url("sdg9.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#sdg9:hover {
+  background-image: url("sdg9gif.webp");
+  animation: sdg-anim 1s forwards;
+
+}
+#sdg10{
+  background-image:url("sdg10.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#sdg10:hover {
+  background-image: url("sdg10gif.webp");
+  animation: sdg-anim 1s forwards;
+}
+#sdg11{
+  background-image:url("sdg11.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#sdg11:hover {
+  background-image: url("sdg11gif.webp");
+  animation: sdg-anim 1s forwards;
+
+}
+#sdg12{
+  background-image:url("sdg12.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#sdg12:hover {
+  background-image: url("sdg12gif.webp");
+  animation: sdg-anim 1s forwards;
+}
+#sdg13{
+  background-image:url("sdg13.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#sdg13:hover {
+  background-image: url("sdg13gif.webp");
+  animation: sdg-anim 1s forwards;
+
+}
+#sdg14{
+  background-image:url("sdg14.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#sdg14:hover {
+  background-image: url("sdg14gif.webp");
+  animation: sdg-anim 1s forwards;
+}
+#sdg15{
+  background-image:url("sdg15.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#sdg15:hover {
+  background-image: url("sdg15gif.webp");
+  animation: sdg-anim 1s forwards;
+
+}
+#sdg16{
+  background-image:url("sdg16.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#sdg16:hover {
+  background-image: url("sdg16gif.webp");
+  animation: sdg-anim 1s forwards;
+}
+#sdg17{
+  background-image:url("sdg17.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#sdg17:hover {
+  background-image: url("sdg17gif.webp");
+  animation: sdg-anim 1s forwards;
+}
+#tgg{
+  background-image:url("tgg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#tgg:hover {
+  background-image: url("tgggif.gif");
+  animation: sdg-anim 1s forwards;
+}
